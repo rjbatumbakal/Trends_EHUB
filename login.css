@@ -7,14 +7,27 @@
 }
 
 header {
-  background-color: rgba(0, 85, 176, 0.63);
-  color: white;
+  background-color: #0056B0;
+  color: #fff;
+  padding: 10px 20px;
   display: flex;
-  align-items: center; 
-  letter-spacing: 1.5px;
-  position: fixed; 
-  margin-top: 20px;
-  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+header h1 {
+  font-size: 1.5em;
+  margin: 0% 12% 0% 12%;
+}
+
+header h1 a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .adnu {
@@ -81,15 +94,6 @@ header {
   margin-bottom: 20px; 
 }
 
-.google{
-  border-radius: 50px;
-  height: 30px;
-  width: 30px;
-  position: absolute;
-  margin-top: 27.5rem;
-  margin-right: 14rem;
-}
-
 .login {
   background-color: blue;
   color: white;
@@ -118,16 +122,32 @@ header {
   animation: fadeIn 1s ease-in-out forwards;
 }
 
+.signup_button {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.google {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
 .sign-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   color: white;
   background-color: blue;
   border-radius: 50px;
   width: 18rem;
-  align-items: center;
   cursor: pointer;
-  margin-top: 20px;
   text-align: center;
   font-size: 15px;
+  padding: 10px;
 }
 
 @keyframes fadeIn {
